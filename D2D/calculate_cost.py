@@ -10,6 +10,8 @@ with open('channel-cost.json', 'r') as f:
 
 # Calculate the total cost per day across different channels
 total_cost_per_day = {}
+total_cost_per_week={None:None}
+#calculate the total cost per week
 for data in channel_data:
     date = data['date'].split(' ')[0]
     if date not in total_cost_per_day:
